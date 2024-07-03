@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Store</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- css links -->
+    <link rel="stylesheet" href="./medicine.css">
+</head>
+<body>
+    <header class="topheader">
+        <div>
+            <img src="./swast health.jpeg" alt="healthlogo" style="height: 100px; width: 120px;">
+        </div>
+        <div class="searchcontainer">
+            <from action="/action_page.php">
+                <input type="text" placeholder="    Search Product or Brand ..." name="Search" style="height: 30px; width: 900px; border-radius: 5px;">
+                <button type="Sumit"><i class="fa fa-search"></i></button>
+            </from>
+        </div>
+        <div class="login">
+            <img src="./login logo.png" alt="login" style="height: 30px; width: 30px;">
+            <from action="/action_page.php">
+                <button onclick="myFunction()" class="dropbtn">Login
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="myDropdown" class="drop-content">
+                    <a href="#">Reorder</a>
+                    <a href="#">Track Order</a>
+                    <a href="#">login</a>
+                </div>
+            </from>
+        </div>
+        <div class="cart">
+            <img src="./shopping-bag.png" alt="cart" style="height: 30px; width: 30px;">
+            <a href="#">Cart</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2>Order Medicine</h2>
+            <p>Genuine Medicine. Maximum Discount Free Delivery at your door step</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <h2>Order by Prescription</h2>
+            <p>Submit Your Prescription and Get Your Medicines at Home</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <h2>Reorder Medicine</h2>
+            <p>Genuine Medicine. Maximum Discount Free Delivery at your door step</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <h2>Shop by Category</h2>
+            <p>Genuine Products, Hygiene Storage, Low Price, Timely Delivery of Household Supplies.</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+</body>
+</html>

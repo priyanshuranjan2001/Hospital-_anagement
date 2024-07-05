@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+nav ul li .dropdown-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li .dropdown-content label {
+    margin-top: 1rem;
+    color: #333;
+}
+
+nav ul li .dropdown-content input,
+nav ul li .dropdown-content button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+nav ul li .dropdown-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li .dropdown-content button:hover {
+    background-color: #555;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#contact-form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    footer {
+        position: static;
+    }
+}
+.Question-Form{
+    color: aqua;
+    size: 500px;
+}

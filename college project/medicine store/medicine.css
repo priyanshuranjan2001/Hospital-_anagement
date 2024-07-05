@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    
+    font-style: normal;
       
 }
 .bona-nova-sc-regular {
@@ -45,7 +45,7 @@ body {
     float: left;
     overflow: hidden;
 }
-.login .dropbtn {
+.login.dropbtn {
     font-size: 18px;  
     border: none;
     outline: none;
